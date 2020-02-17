@@ -1,0 +1,7 @@
+com\test\models\ResponseStructure.class
+com\test\routeBuilder.class
+com\test\models\UserPhones.class
+com\test\models\User.class
+com\test\processors\UserProcessor.class
+com\test\beans\UserService.class
+com\test\models\User_Req.class

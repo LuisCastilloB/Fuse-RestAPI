@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1581712405268
+Build-Jdk: 1.8.0_241
+Built-By: LuisCastillo
+Bundle-Description: A simple rest DSL service example
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: A simple rest DSL service example
+Bundle-SymbolicName: restDSL
+Bundle-Version: 0.0.2.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.test.beans;uses:="org.apache.camel";version="0.0.2",
+ com.test.models;uses:="io.swagger.annotations";version="0.0.2",com.test
+ .processors;uses:="org.apache.camel";version="0.0.2",com.test;uses:="or
+ g.apache.camel.builder";version="0.0.2"
+Import-Package: com.fasterxml.jackson.annotation;resolution:=optional;ve
+ rsion="[2.6,3)",com.test.beans;resolution:=optional,com.test.models;res
+ olution:=optional,com.test.processors;resolution:=optional,com.test.rou
+ teBuilder;resolution:=optional,io.swagger.annotations;resolution:=optio
+ nal;version="[1.5,2)",org.apache.camel;resolution:=optional;version="[2
+ .17,3)",org.apache.camel.builder;resolution:=optional;version="[2.17,3)
+ ",org.apache.camel.component.jackson;resolution:=optional;version="[2.1
+ 7,3)",org.apache.camel.model;resolution:=optional;version="[2.17,3)",or
+ g.apache.camel.model.rest;resolution:=optional;version="[2.17,3)",org.a
+ pache.camel.spi;resolution:=optional;version="[2.17,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007

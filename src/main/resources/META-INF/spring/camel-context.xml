@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:camel="http://camel.apache.org/schema/spring"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd               http://camel.apache.org/schema/spring        http://camel.apache.org/schema/spring/camel-spring.xsd">
+    <!-- netty http bootstrap configuration -->
+    <!-- export in the OSGi server resgistry so we can use it from the Camel 
+		application bundles -->
+    <bean class="com.test.routeBuilder" id="routeBuilder"/>
+    <bean class="com.test.beans.UserService" id="UserService"/>
+    <camelContext id="UserAPI" useMDCLogging="true"
+        trace="false" xmlns="http://camel.apache.org/schema/spring">
+        <routeBuilder ref="routeBuilder"/>
+    </camelContext>
+</beans>
